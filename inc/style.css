@@ -1,0 +1,188 @@
+/*
+    Photo Archive style sheet, modifications and tweaks can be made here to customise the look and feel of the script
+*/
+body {
+	background: 424242;
+}
+#header {
+	width:100%;
+	height:75px;
+	background: #424242;
+	border-bottom:4px solid #000;
+	position:fixed;
+	top:0px;
+	left: 0px;
+}
+a:link {
+	text-decoration: none;
+	color: #ccc;
+}
+#site_title {
+	color: #FFFFFF;
+	padding: 10px;
+	font-size: 45px;
+	margin-left: 50px;
+}
+#container {
+	position: absolute;
+	top: 79px;
+	bottom: 34px;
+	left:0px;
+	right:0px;
+	background: #FFF;
+	padding: 10px 60px 100px 60px;
+	overflow-x: none;
+	overflow-y: auto;
+}
+#breadcrumb {
+	position:fixed;
+	top: 10px;
+	right:60px;
+}
+.upone {
+	width:130px;
+	height: 130px;
+	float:left;
+	margin:10px;
+}
+.folder > div {
+	width:90px;
+	height:90px;
+	float:left;
+	margin:10px;
+	background:url(folder.png) no-repeat;
+	background-position: left 5px top 5px;
+	padding: 20px;
+	padding-top:40px;
+	text-align:center;
+}
+.folder > div > span {
+	color:#424242;
+	font-size: 16px;
+	text-decoration: none;
+}
+.folder > span {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	left: 0px;
+	right: 0px;
+	height: 135px;
+	overflow: hidden;
+	background: #424242;
+	color: #fff;
+	z-index: 2;
+	border-top: 4px solid black;
+}
+.folder > span > div {
+	height: 100px;
+	width: 150px;
+	float: left;
+	margin: 8px;
+	margin-bottom: 100px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 1px solid white;
+}
+.folder > span > div > div {
+	height: 100px;
+	width: 150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.folder:hover > span {
+	display:inline;
+}
+#previous {
+	position: fixed;
+	left: 0;
+	top: 79px;
+	bottom: 34px;
+	width: 50px;
+	background: #EFFFB2 url(previous.png) no-repeat;
+	background-position:center;
+}
+#next {
+	position: fixed;
+	right: 14px;
+	top: 79px;
+	bottom: 34px;
+	width: 50px;
+	background: #EFFFB2 url(next.png) no-repeat;
+	background-position:center;
+}
+#image_count {
+	position:fixed;
+	top: 32px;
+	right:60px;
+	color: #FFF;
+}
+.photos {
+	cursor: zoom;
+}
+.photos > div {
+	width:118px;
+	height:138px;
+	margin:10px;
+	float:left;
+	text-align:center;
+	background: #F5F5F5;
+	padding:5px;
+	border:1px solid #424242;
+}
+.photos > div > img {
+	max-width:120px;
+	max-height:100px;
+	margin-bottom:5px;
+}
+.photos > div > span {
+	font-size:10px;
+	color:#424242;
+}
+.description {
+	cursor: zoom;
+}
+.description > div {
+	width:118px;
+	height:138px;
+	margin:10px;
+	float:left;
+	text-align:center;
+	background: #F5F5F5;
+	padding:5px;
+	border:1px solid #424242;
+}
+.description > div > img {
+	max-width:120px;
+	max-height:100px;
+	margin-bottom:5px;
+}
+.description > div > span {
+	font-size:10px;
+	color:#424242;
+}
+#navinfo {
+	position: fixed;
+	top: 54px;
+	right: 60px;
+	color: white;
+}
+#footer {
+	width:100%;
+	height:30px;
+	background: #424242;
+	border-top:4px solid #000;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+#footer > span {
+	color: #FFFFFF;
+	line-height: 30px;
+	font-size: 14px;
+}
+#footer > span a {
+	color: #FFF;
+	text-decoration: underline;
+}
