@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^dir/(.*) index.php?dir=$1
+RewriteRule ^tags index.php?page=tags
+RewriteRule ^search/(.*) index.php?page=search&term=$1
+RewriteRule ^tree index.php?page=tree
